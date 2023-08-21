@@ -1,10 +1,16 @@
 FROM python
 
-COPY ./app/ app/ 
+COPY ./app/requirements.txt app/requirements.txt
 
 WORKDIR /app
 
+RUN pip install -r requirements.txt
+
 EXPOSE 5000
 
-ENTRYPOINT [ "/BIN/SH" ]
+COPY ./app/ app/
+
+ENTRYPOINT [ "python" ]
+
+CMD [ "app.py" ]
 

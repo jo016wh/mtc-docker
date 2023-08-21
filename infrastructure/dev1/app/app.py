@@ -1,6 +1,5 @@
 # flask_web/app.py
-
-from flask import Flask, jsonify, request
+from Flask import Flask, jsonify, request
 import random
 import os
 
@@ -9,7 +8,7 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
 @app.route('/', methods=['GET'])
 def hello_world():
-     return jsonify({"data": {"name" : os.getenv('HOSTNAME') ,"temp" : random.randrange(-10, 20, 1)}})
+     return jsonify({"data": {"name" : os.getenv('HOSTNAME'),"device" : os.getenv('DEVICE'),"temp" : random.randrange(-10, 20, 1)}})
 
 
 if __name__ == '__main__':
