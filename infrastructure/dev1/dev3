@@ -1,0 +1,26 @@
+IMAGE          CREATED         CREATED BY                                      SIZE      COMMENT
+f3e5719b2677   6 minutes ago   /bin/sh -c #(nop)  CMD ["app.py"]               0B        
+0c0da2266d3f   6 minutes ago   /bin/sh -c #(nop)  ENTRYPOINT ["python"]        0B        
+8e1552f4c15c   6 minutes ago   /bin/sh -c #(nop) COPY dir:a535cf8cb4e42f26a…   456B      
+3373d1c0e499   6 minutes ago   /bin/sh -c #(nop)  EXPOSE 5000                  0B        
+59652c05a910   6 minutes ago   /bin/sh -c pip install -r requirements.txt      16.1MB    
+ce6985e4136f   6 minutes ago   /bin/sh -c #(nop) WORKDIR /app                  0B        
+0bcd4a777e5c   6 minutes ago   /bin/sh -c #(nop) COPY file:71fb3850dd55bec4…   13B       
+cd9c1d09c087   4 weeks ago     CMD ["python3"]                                 0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     RUN /bin/sh -c set -eux;   wget -O get-pip.p…   11.1MB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV PYTHON_GET_PIP_SHA256=45a2bb8bf2bb5eff16…   0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV PYTHON_GET_PIP_URL=https://github.com/py…   0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV PYTHON_SETUPTOOLS_VERSION=65.5.1            0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV PYTHON_PIP_VERSION=23.1.2                   0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     RUN /bin/sh -c set -eux;  for src in idle3 p…   32B       buildkit.dockerfile.v0
+<missing>      4 weeks ago     RUN /bin/sh -c set -eux;   wget -O python.ta…   50MB      buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV PYTHON_VERSION=3.11.4                       0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8…   0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     RUN /bin/sh -c set -eux;  apt-get update;  a…   18.6MB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV LANG=C.UTF-8                                0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV PATH=/usr/local/bin:/usr/local/sbin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      4 days ago      /bin/sh -c set -ex;  apt-get update;  apt-ge…   587MB     
+<missing>      4 days ago      /bin/sh -c apt-get update && apt-get install…   177MB     
+<missing>      4 days ago      /bin/sh -c set -eux;  apt-get update;  apt-g…   48.4MB    
+<missing>      5 days ago      /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      5 days ago      /bin/sh -c #(nop) ADD file:3a6d159d80cb8abfa…   116MB     
